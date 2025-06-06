@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 - Loja de Calçados</title>
+    <link rel="stylesheet" href="exercicio4.css">
+</head>
+<body>
+    <div class="product-page">
+        <h1>Luvas de Boxe ADIDAS</h1>
+        
+        <div class="product-container">
+            <div class="main-image">
+                <img id="mainProductImage" src="1.jpg" alt="Luvas de Boxe ">
+            </div>
+            
+            <div class="thumbnails">
+                <img src="1.jpg" alt="Luvas de Boxe - Vista 1" onclick="changeMainImage('1.jpg')">
+                <img src="2.jpg" alt="Luvas de Boxe - Vista 2" onclick="changeMainImage('2.jpg')">
+                <img src="3.jpg" alt="Luvas de Boxe - Vista 3" onclick="changeMainImage('3.jpg')">
+                <img src="4.jpg " alt="Luvas de Boxe - Vista 4" onclick="changeMainImage('4.jpg')">
+                <img src="5.jpg" alt="Luvas de Boxe - Vista 5" onclick="changeMainImage('5.jpg')">
+            </div>
+        </div>
+        
+        <div class="product-info">
+            <div class="price">R$ 199,90</div>
+            
+            <div class="model-options">
+                <h3>Modelos:</h3>
+                <button onclick="changeModel('Preto', '1.jpg')">Preto</button>
+                <button onclick="changeModel('Vermelho', '2.jpg')">Vermelho</button>
+                <button onclick="changeModel('Branco', '3.jpg')">Branco</button>
+                <button onclick="changeModel('Azul', '4.jpg')">Azul</button>
+                <button onclick="changeModel('Rosa', '5.jpg')">Rosa</button>
+            </div>
+            
+            <div class="size-options">
+                <h3>Tamanhos:</h3>
+                <select id="sizeSelect">
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                </select>
+            </div>
+            
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <script src="exercicio4.js"></script>
+</body>
+</html>

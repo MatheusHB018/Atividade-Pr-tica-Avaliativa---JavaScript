@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Loja de Camisetas</title>
+    <link rel="stylesheet" href="exercicio3.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="mainImage" src="produto4.png" alt="Camiseta" onclick="updateProduct('cinza')">
+        </div>
+        
+        <div class="product-info">
+            <h1 id="productName">Camiseta Cinza</h1>
+            <p id="productPrice">Preço: R$ 59,90</p>
+            <p id="productStock">Estoque disponível: 15 unidades</p>
+            
+            <div class="color-options">
+                <button onclick="updateProduct('cinza')">Cinza</button>
+                <button onclick="updateProduct('preta')">Preta</button>
+                <button onclick="updateProduct('Azul')">Azul</button>
+                <button onclick="updateProduct('Rosa')">Rosa</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="exercicio3.js"></script>
+</body>
+</html>
